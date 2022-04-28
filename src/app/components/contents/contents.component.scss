@@ -1,0 +1,23 @@
+.conteudo{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 300px);
+    // align-content: center;
+    padding: 4%;
+  
+  }
+  
+  .example-card {
+    max-width: 400px;
+    align-content: center;
+    background-color: rgba(236, 232, 232, 0.692);
+    }
+  
+  .example-header-image {
+    // background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
+  // mat-grid-tile {
+  //   background: lightblue;
+  // }
