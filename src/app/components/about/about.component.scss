@@ -1,0 +1,48 @@
+// img {
+//     filter: invert(.95);
+//   }
+  
+  .u-text-placeholder {
+    background-color: #a2a8b1;
+    display: inline-block;
+    height: 9px;
+  }
+  
+  .l-cards {
+    display: grid;
+    grid-gap: 30px;
+    // grid-template-columns: repeat(3, 300px);
+    // grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+  }
+  
+  .c-card {
+    background-color: #ced4da;
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    
+    &__image {
+      align-items: center;
+      background-color: #b5b9c1;
+      // border-top-left-radius: .6rem;
+      // border-top-right-radius: .6rem;
+      display: flex;
+      flex: 5;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    &__content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-around;
+      padding: 15px;
+    }
+  }
