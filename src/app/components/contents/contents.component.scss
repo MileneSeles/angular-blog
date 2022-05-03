@@ -1,23 +1,49 @@
-.conteudo{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 300px);
-    // align-content: center;
-    padding: 4%;
-  
-  }
-  
-  .example-card {
-    max-width: 400px;
-    align-content: center;
-    background-color: rgba(236, 232, 232, 0.692);
+ *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.hobbies{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+
+    h1 {
+        font-size: 14px;
+        font-weight: 900px;
+        padding-bottom: 5px;
     }
-  
-  .example-header-image {
-    // background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
-  
-  // mat-grid-tile {
-  //   background: lightblue;
-  // }
+    
+} 
+
+// .title{
+//     padding: 25px 20px;
+//     text-align: center;
+// }
+// .title p {
+//     font-size: 18px;
+//     padding: 25px 20px;
+//     text-align: center;
+// }
+
+// .card-tex{
+//   font-size: 18px;
+//     padding: 25px 40px;
+//     text-align: center;
+// }
+.card-body {
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+}
+.card {
+    margin: 10px 10px;
+}
+// .card-body a {
+//     color: rgb(70, 38, 252);
+//     font-size: 15px;
+//     font-weight: 600px;
+//     margin: auto;
+//     text-decoration: none;
+// }
+
+

@@ -1,0 +1,13 @@
+.about{
+    align-items: center;
+    // display: flex;
+    justify-content: center;
+    padding: 4%;
+
+    .card-about{
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+        margin: auto ;
+        max-width: 900px;
+    }
+}
+

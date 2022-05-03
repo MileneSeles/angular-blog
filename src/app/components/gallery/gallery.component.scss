@@ -1,140 +1,37 @@
-.conteudo{
-    display: flex;
-    // flex-wrap: wrap;
-    // padding: 1rem 0rem;
-  }
-  
-  .cartoes {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 20.5em );
-    grid-template-rows: repeat(4, 300px);
-    padding: 4%;
-  }
-  
-  .cartao {
-    height: 100%;
-    perspective: 1000px;
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 8px 8px;
+}
+
+.row {
+  margin: 0 -4px;
+  padding: 4%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+  padding: 8px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
+    display: block;
+    margin-bottom: 8px;
   }
-  
-  .cartao-container {
-    height: 100%;
-    position: relative;
-    transition: transform .6s;
-    transform-style: preserve-3d;
-  }
-
-  
-  .cartao:hover .cartao-container {
-    transform: rotateY(180deg);
-  }
-  
-  .cartao-front, .cartao-back {
-    backface-visibility: hidden;
-    border-radius: 20px;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .cartao-front {
-    background: #666;
-  }
-  
-  .cartao-back {
-    background: #fff;
-    background-color: #f7f6e8;
-    box-sizing: border-box;
-    color: #44432a;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 15px;
-    transform: rotateY(180deg);
-  }
-  
-  .cartao1 .cartao-front {
-    background-image: url(../../../assets/img/astrodev.jpg);
-    background-size: cover;
-    background-position: 30%
-  }
-  
-  .cartao2 .cartao-front {
-    background-image: url(../../../assets/img/astrolanche.jpg);
-    background-size: cover;
-    background-position: 60%
-  }
-  
-  .cartao3 .cartao-front {
-    background-image: url(../../../assets/img/astrolendo.jpg);
-    background-size: cover;
-    background-position: 100%
-  }
-  
-  .cartao4 .cartao-front {
-    background-image: url(../../../assets/img/astrocafe.jpg);
-    background-size: cover;
-    background-position: 100%
-  }
-
-  .cartao5 .cartao-front {
-    background-image: url(../../../assets/img/astropiscina.jpg);    
-    background-size: cover;
-    background-position: 100%
-  }
-  
-  .cartao6 .cartao-front {
-    background-image: url(../../../assets/img/astromusica.jpg);
-    background-size: cover;
-    background-position: 100%
-  }
-  
-  .cartao7 .cartao-front {
-    background-image: url(../../../assets/img/astronot.jpg);
-    background-size: cover;
-    background-position: 100%
-  }
-  
-  .cartao8 .cartao-front {
-    background-image: url(../../../assets/img/astronote.jpg);  
-    background-size: cover;
-    background-position: 100%
-  }
-  
-  .cartao9 .cartao-front {
-    background-image: url(../../../assets/img/astropipoca.jpg);
-    background-size: cover;
-    background-position: 100%
-  }
-  
-  .cartao10 .cartao-front {
-    background-image: url(../../../assets/img/astrorosquinha.jpg);   
-    background-size: cover;
-    background-position: 100%
-  }
-  
-  .cartao11 .cartao-front {
-    background-image: url(../../../assets/img/astroterra.webp);   
-    background-size: cover;
-    background-position: 100%
-  }
-
-  .cartao12 .cartao-front {
-    background-image: url(../../../assets/img/astrotwo.webp);   
-    background-size: cover;
-    background-position: 100%
-  }
-
-  .cartao13 .cartao-front {
-    background-image: url(../../../assets/img/astromoedas.webp);   
-    background-size: cover;
-    background-position: 100%
-  }
-
-  .cartao14 .cartao-front {
-    background-image: url(../../../assets/img/astrophone.webp);   
-    background-size: cover;
-    background-position: 100%
-  }
+}
