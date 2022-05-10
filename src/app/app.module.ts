@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
-import { ContentsComponent } from './components/contents/contents.component';
+import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import {MatToolbarModule} from 'node_modules/@angular/material/toolbar';
@@ -20,7 +20,7 @@ import { HobbiesComponent } from './components/hobbies/hobbies.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentsComponent,
+    HomeComponent,
     FooterComponent,
     GalleryComponent,
     AboutComponent,
