@@ -5,11 +5,11 @@
 .column {
   float: left;
   width: 25%;
-  padding: 8px 8px;
+  padding: 8px;
 }
 
 .row {
-  margin: 0 -4px;
+  margin: 4px;
   padding: 4%;
 }
 
@@ -32,6 +32,6 @@
   .column {
     width: 100%;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 }
