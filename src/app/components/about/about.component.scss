@@ -1,13 +1,10 @@
 .about{
     align-items: center;
-    // display: flex;
     justify-content: center;
-    padding: 3%;
-
+    padding: 2.5%;
     .card-about{
         box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
         margin: auto ;
-        max-width: 88%;
+        max-width: 60%;
     }
 }
-

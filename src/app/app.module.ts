@@ -11,7 +11,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import {MatToolbarModule} from 'node_modules/@angular/material/toolbar';
 import { AboutComponent } from './components/about/about.component';
 import {MatCardModule} from '@angular/material/card';
-import { HobbiesComponent } from './components/hobbies/hobbies.component';
+import { CardModule } from './components/gallery/card/card.module';
 // import {MatGridListModule} from '@angular/material/grid-list';
 // import {MatMenuModule} from '@angular/material/menu';
 
@@ -23,8 +23,7 @@ import { HobbiesComponent } from './components/hobbies/hobbies.component';
     HomeComponent,
     FooterComponent,
     GalleryComponent,
-    AboutComponent,
-    HobbiesComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +31,7 @@ import { HobbiesComponent } from './components/hobbies/hobbies.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
+    CardModule
     // MatMenuModule
     // MatGridListModule
   ],
